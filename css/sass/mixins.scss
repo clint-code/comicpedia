@@ -1,0 +1,12 @@
+//font headings
+@mixin title-fonts-property($font-family:$title-font) {
+    font-family:'#{$font-family}', Arial, Helvetica, sans-serif;
+}
+
+//body font
+@mixin body-font-property($font-family:$text-font-regular){
+    font-family:'#{$font-family}', Arial, Helvetica, sans-serif;
+}
+
+//display flex
+

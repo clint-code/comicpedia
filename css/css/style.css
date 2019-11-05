@@ -1,0 +1,330 @@
+/**FONTS**/
+/**SPACES**/
+/**COLOURS**/
+/*FONT FACES*/
+@font-face {
+  font-family: "Helsinki";
+  src: url("../fonts/helsinki-webfont.woff2") format("woff2"), url("../fonts/helsinki-webfont.woff") format("woff"), url("../fonts/helsinki-webfont.ttf") format("truetype"), url("../fonts/titilliumweb-italic.eot") format("embedded-opentype"), url("../fonts/helsinki-webfont.svg#helsinki-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Titillium Regular";
+  src: url("../fonts/titilliumweb-regular.woff2") format("woff2"), url("../fonts/titilliumweb-regular.woff") format("woff"), url("../fonts/titilliumweb-regular.ttf") format("truetype"), url("../fonts/titilliumweb-italic.eot") format("embedded-opentype"), url("../fonts/titilliumweb-regular.svg#titilliumweb-regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Titillium Bold";
+  src: url("../fonts/titilliumweb-bold.woff2") format("woff2"), url("../fonts/titilliumweb-bold.woff") format("woff"), url("../fonts/titilliumweb-bold.ttf") format("truetype"), url("../fonts/titilliumweb-italic.eot") format("embedded-opentype"), url("../fonts/titilliumweb-bold.svg#titilliumweb-bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Titillium Light";
+  src: url("../fonts/titilliumweb-light.woff2") format("woff2"), url("../fonts/titilliumweb-light.woff") format("woff"), url("../fonts/titilliumweb-light.ttf") format("truetype"), url("../fonts/titilliumweb-italic.eot") format("embedded-opentype"), url("../fonts/titilliumweb-light.svg#titilliumweb-light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Titillium Italic";
+  src: url("../fonts/titilliumweb-italic.woff2") format("woff2"), url("../fonts/titilliumweb-italic.woff") format("woff"), url("../fonts/titilliumweb-italic.ttf") format("truetype"), url("../fonts/titilliumweb-italic.eot") format("embedded-opentype"), url("../fonts/titilliumweb-italic.svg#titilliumweb-italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden; }
+
+ul, li {
+  list-style: none;
+  font-family: "Titillium Regular", Arial, Helvetica, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helsinki", Arial, Helvetica, sans-serif;
+  margin-bottom: 10px; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 28px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 12px; }
+
+p {
+  font-family: "Titillium Regular", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: justify; }
+
+.text-focus {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  height: auto; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*responsive columns*/
+.full-width {
+  width: 100%; }
+
+.half {
+  width: 48%;
+  margin-right: 1%;
+  margin-left: 1%; }
+
+.one-third {
+  width: 30%;
+  margin-right: 3%; }
+
+.one-quater {
+  width: 23%;
+  margin-right: 2%; }
+
+/*navigation menu*/
+.main-header {
+  position: absolute;
+  top: 0px;
+  background-color: #FFFFFF; }
+
+.logo-style {
+  height: 100px;
+  padding: 10px;
+  margin: 15px; }
+
+.main-nav-section {
+  margin: 40px; }
+
+.main-nav > ul > li > a {
+  padding-left: 35px;
+  text-transform: uppercase;
+  color: #1565C0;
+  font-family: "Helsinki", Arial, Helvetica, sans-serif;
+  font-size: 1em; }
+
+.slide-section {
+  margin-top: 120px; }
+
+.single-slide-cont {
+  position: relative;
+  width: 100%;
+  z-index: -1000; }
+
+.slide-image {
+  position: relative;
+  height: 530px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .slide-image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.459); }
+
+.slide-image img {
+  height: auto; }
+
+.slide-txt-position {
+  position: absolute;
+  left: 35px;
+  right: 0;
+  bottom: 80px;
+  max-width: 50%;
+  margin: 5px; }
+  .slide-txt-position h3 {
+    font-family: "Helsinki", Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 3.5em; }
+  .slide-txt-position h4 {
+    font-family: "Titillium Regular", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    margin: 0 0 15px 0; }
+    .slide-txt-position h4::after {
+      content: "";
+      display: block;
+      background-color: #FFFFFF;
+      margin: 10px 0 0 1px;
+      width: 50px;
+      height: 5px; }
+  .slide-txt-position p {
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+    letter-spacing: 0.5px;
+    font-size: 1em; }
+  .slide-txt-position .call-to-action > a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer; }
+    .slide-txt-position .call-to-action > a::after {
+      content: "";
+      position: absolute;
+      height: 50%;
+      width: 50%;
+      left: 115px;
+      top: 160px;
+      background: url("/img/arrow.png") 0px 0px no-repeat; }
+
+/*---------owl indicators---------------*/
+.owl-dots {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  padding: 0 50px 0 50px; }
+
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  float: left;
+  margin-right: 20px; }
+  .owl-dot.owl-dot.active {
+    background-color: #FFFFFF; }
+
+.articles-section {
+  margin: 15px;
+  padding: 20px;
+  position: relative;
+  top: 35px;
+  z-index: 100;
+  height: 410px;
+  background-color: #FFFFFF; }
+
+.articles-section > h3 {
+  color: #1565C0;
+  text-align: center;
+  font-size: 1.7em;
+  padding-top: 5px;
+  padding-bottom: 15px; }
+
+.article {
+  position: relative; }
+
+.article img {
+  width: 100%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+
+.article-text-section {
+  position: absolute;
+  right: 0;
+  top: 10em;
+  max-width: 65%;
+  background-color: #FFFFFF;
+  padding: 20px; }
+  .article-text-section h6 {
+    text-align: center;
+    color: #B90833;
+    font-family: "Titillium Bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em; }
+  .article-text-section h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Titillium Bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #000000; }
+
+.villain-quote-section {
+  padding: 20px;
+  height: 450px;
+  position: relative;
+  background-image: linear-gradient(#000428, #004E92); }
+
+.bold-text {
+  font-size: 2.5em;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  border-left: 5px solid #FFFFFF;
+  padding-left: 5px;
+  padding-top: 15px;
+  margin-top: 15px; }
+
+.villain-image-section > img {
+  height: 450px;
+  padding: 40px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -webkit-border-radius: 50px; }
+
+.quote-section {
+  padding-top: 25px; }
+  .quote-section blockquote {
+    padding: 10px;
+    font-family: "Helsinki", Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 1.25em; }
+  .quote-section p {
+    color: #FFFFFF; }
+
+.about-section {
+  position: relative;
+  top: 35px;
+  margin-bottom: 35px; }
+
+.about-image-section {
+  position: relative;
+  background: url("../img/villains-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 430px; }
+
+#joker-image-position {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 415px; }
+
+.about-text-section {
+  position: absolute;
+  right: 0;
+  max-width: 60%;
+  background-color: #FFFFFF;
+  margin-top: -130px; }

@@ -1,0 +1,23 @@
+/*FONT FACES*/
+
+@font-face {
+    font-family:'#{$title-font}';
+    src: url('#{$font-path}/#{$title-font-name}.woff2') format('woff2'),
+    url('#{$font-path}/#{$title-font-name}.woff') format('woff'),
+    url('#{$font-path}/#{$title-font-name}.ttf') format('truetype'),
+    url('#{$font-path}/#{$title-font-name}.eot') format('embedded-opentype'),
+    url('#{$font-path}/#{$title-font-name}.svg##{$title-font-name}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'#{$text-font-regular}';
+    src:url('#{$font-path}/#{$text-font-regular-name}.woff2') format('woff2'),
+    url('#{$font-path}/#{$text-font-regular-name}.woff') format('woff'),
+    url('#{$font-path}/#{$text-font-regular-name}.ttf') format('truetype'),
+    url('#{$font-path}/#{$text-font-regular-name}.eot') format('embedded-opentype'),
+    url('#{$font-path}/#{$text-font-regular-name}.svg##{$text-font-regular-name}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,163 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+body {
+    overflow-x: hidden;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+h1 {
+    @include title-fonts-property;
+}
+
+h5 {
+    @include title-fonts-property;
+    font-size: 88px;
+    color: $color-1;
+    letter-spacing: 2px;
+}
+
+p {
+    @include body-font-property;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.large-fancy-font {
+    @include title-fonts-property;
+    font-size: 45px;
+}
+
+.main-container {
+    position: relative;
+    padding: 0px;
+}
+
+.background {
+    position: relative;
+}
+
+.character {
+    article {
+        position: absolute;
+        top: 0%;
+        right: 7%;
+        left: 54%;
+    }
+
+    img {
+        position: absolute;
+        top: 0%;
+        right: 40%;
+    }
+
+}
+
+.title-container {
+    margin-bottom: 20px;
+}
+
+.content-filter {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+
+    li {
+
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        filter: grayscale(100%);
+
+        
+    }
+
+    li.active {
+        filter: grayscale(0%) !important;
+    }
+
+}
+
+.marvel-icon,
+.dc-icon {
+    cursor: pointer;
+
+    img {
+        padding-bottom: 15px;
+    }
+}
+
+.logo-section {
+    padding-bottom: 10px;
+}
+
+.owl-nav {
+
+    position: absolute;
+    top: 45%;
+    left: 45%;
+
+    .owl-prev {
+        width: 67px;
+        height: 59px;
+        background: url('/img/arrow-left.png') left top no-repeat;
+    }
+
+    .owl-next {
+        width: 52px;
+        height: 53px;
+        background: url('/img/arrow-right.png') left top no-repeat;
+    }
+
+}
+
+.character-description {
+    position: absolute;
+    right: 2%;
+    top: 0%;
+
+    h1 {
+        font-size: 60px;
+        color: $color-1;
+    }
+}
+
+.owl-item {
+    img {
+        width: auto !important;
+    }
+}
+
+.owl-dots{
+    width: 35%;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+}
+
+.owl-dot{
+    background: $color-11;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    display: block;
+}
+
+.hide {
+    display: none !important;
+}
