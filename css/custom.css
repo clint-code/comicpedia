@@ -26,7 +26,7 @@ h1 {
 h5 {
   font-family: "Helsinki", Arial, Helvetica, sans-serif;
   font-size: 88px;
-  color: #2187DF;
+  color: #2c3e50;
   letter-spacing: 2px; }
 
 p {
@@ -34,7 +34,8 @@ p {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 1px;
-  text-align: justify; }
+  text-align: justify;
+  color: #34495e; }
 
 .large-fancy-font {
   font-family: "Helsinki", Arial, Helvetica, sans-serif;
@@ -74,6 +75,12 @@ p {
   .content-filter li.active {
     filter: grayscale(0%) !important; }
 
+.marvel {
+  background-color: rgba(228, 46, 56, 0.72); }
+
+.dc {
+  background-color: #3498dbd6; }
+
 .marvel-icon,
 .dc-icon {
   cursor: pointer; }
@@ -97,34 +104,36 @@ p {
     height: 53px;
     background: url("/img/arrow-right.png") left top no-repeat; }
 
-.character-description {
-  position: absolute;
-  right: 2%;
-  top: 0%; }
-  .character-description h1 {
-    font-size: 60px;
-    color: #2187DF; }
-
-.owl-item img {
+.characterSlide .owl-item img {
   width: auto !important; }
-
-.owl-dots {
+.characterSlide .owl-dots {
   width: 35%;
   position: absolute;
   top: 30%;
   left: 4%; }
-
-.owl-dot {
-  background: #004E92;
-  width: 45px;
-  height: 45px;
-  border-radius: 30px;
-  text-align: center;
-  margin-bottom: 10px;
-  border: 2px solid white;
-  display: block; }
-
-.hide {
-  display: none !important; }
+  .characterSlide .owl-dots .owl-dot {
+    background: #3498db;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    display: block;
+    color: white;
+    font-family: "Titillium Regular", Arial, Helvetica, sans-serif; }
+    .characterSlide .owl-dots .owl-dot h6 {
+      display: none; }
+  .characterSlide .owl-dots .active {
+    background: #004E92;
+    width: auto;
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px; }
+    .characterSlide .owl-dots .active h6 {
+      display: block; }
+    .characterSlide .owl-dots .active span {
+      display: none; }
 
 /*# sourceMappingURL=custom.css.map */

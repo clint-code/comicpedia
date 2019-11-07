@@ -21,7 +21,7 @@ h1 {
 h5 {
     @include title-fonts-property;
     font-size: 88px;
-    color: $color-1;
+    color: #2c3e50;
     letter-spacing: 2px;
 }
 
@@ -31,6 +31,7 @@ p {
     line-height: 30px;
     letter-spacing: 1px;
     text-align: justify;
+    color: #34495e;
 }
 
 .large-fancy-font {
@@ -81,13 +82,21 @@ p {
         padding-right: 15px;
         filter: grayscale(100%);
 
-        
+
     }
 
     li.active {
         filter: grayscale(0%) !important;
     }
 
+}
+
+.marvel{
+    background-color:rgba(228, 46, 56, 0.72);
+}
+
+.dc{
+    background-color: #3498dbd6;
 }
 
 .marvel-icon,
@@ -123,41 +132,61 @@ p {
 
 }
 
-.character-description {
-    position: absolute;
-    right: 2%;
-    top: 0%;
 
-    h1 {
-        font-size: 60px;
-        color: $color-1;
+.characterSlide{
+
+    .owl-item {
+        img {
+            width: auto !important;
+        }
     }
-}
+    
+    .owl-dots {
+        width: 35%;
+        position: absolute;
+        top: 30%;
+        left: 4%;
 
-.owl-item {
-    img {
-        width: auto !important;
+        .owl-dot {
+            background: #3498db;
+            width: 45px;
+            height: 45px;
+            border-radius: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 2px solid white;
+            display: block;
+            color: white;
+            @include body-font-property;
+        
+            h6 {
+                display: none;
+            }
+        
+        }
+
+        .active {
+            background: #004E92;
+            width: auto;
+            height: 45px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+        
+            h6 {
+                display: block;
+            }
+        
+            span {
+                display: none;
+            }
+        }
+
+
     }
+    
+
 }
 
-.owl-dots{
-    width: 35%;
-    position: absolute;
-    top: 30%;
-    left: 4%;
-}
 
-.owl-dot{
-    background: $color-11;
-    width: 45px;
-    height: 45px;
-    border-radius: 30px;
-    text-align: center;
-    margin-bottom: 10px;
-    border: 2px solid white;
-    display: block;
-}
 
-.hide {
-    display: none !important;
-}

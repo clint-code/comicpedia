@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$title-font".
-        on line 4 of \\192.168.11.211\New Media\Clinton\HTMLS\ComicPedia\css\sass\fonts.scss
+        on line 4 of C:\xampp\htdocs\ComicPedia\css\sass\fonts.scss
 
 1: /*FONT FACES*\/
 2: 
@@ -13,7 +13,7 @@ Error: Undefined variable: "$title-font".
 9:     url('#{$font-path}/#{$title-font-name}.svg##{$title-font-name}') format('svg');
 
 Backtrace:
-\\192.168.11.211\New Media\Clinton\HTMLS\ComicPedia\css\sass\fonts.scss:4
+C:\xampp\htdocs\ComicPedia\css\sass\fonts.scss:4
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/string_interpolation.rb:93:in `_perform'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$title-font\".\A         on line 4 of \\192.168.11.211\New Media\Clinton\HTMLS\ComicPedia\css\sass\fonts.scss\A \A 1: /*FONT FACES*/\A 2: \A 3: @font-face {\A 4:     font-family:'#{$title-font}';\A 5:     src: url('#{$font-path}/#{$title-font-name}.woff2') format('woff2'),\A 6:     url('#{$font-path}/#{$title-font-name}.woff') format('woff'),\A 7:     url('#{$font-path}/#{$title-font-name}.ttf') format('truetype'),\A 8:     url('#{$font-path}/#{$title-font-name}.eot') format('embedded-opentype'),\A 9:     url('#{$font-path}/#{$title-font-name}.svg##{$title-font-name}') format('svg');"; }
+  content: "Error: Undefined variable: \"$title-font\".\A         on line 4 of C:\xampp\htdocs\ComicPedia\css\sass\fonts.scss\A \A 1: /*FONT FACES*/\A 2: \A 3: @font-face {\A 4:     font-family:'#{$title-font}';\A 5:     src: url('#{$font-path}/#{$title-font-name}.woff2') format('woff2'),\A 6:     url('#{$font-path}/#{$title-font-name}.woff') format('woff'),\A 7:     url('#{$font-path}/#{$title-font-name}.ttf') format('truetype'),\A 8:     url('#{$font-path}/#{$title-font-name}.eot') format('embedded-opentype'),\A 9:     url('#{$font-path}/#{$title-font-name}.svg##{$title-font-name}') format('svg');"; }
