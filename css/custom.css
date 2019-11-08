@@ -48,15 +48,17 @@ p {
 .background {
   position: relative; }
 
-.character article {
-  position: absolute;
-  top: 0%;
-  right: 7%;
-  left: 54%; }
-.character img {
-  position: absolute;
-  top: 0%;
-  right: 40%; }
+.character {
+  overflow: hidden; }
+  .character article {
+    position: absolute;
+    top: 0%;
+    right: 7%;
+    left: 54%; }
+  .character .character-img {
+    position: absolute;
+    top: 0%;
+    right: 50%; }
 
 .title-container {
   margin-bottom: 20px; }

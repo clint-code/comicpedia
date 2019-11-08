@@ -48,7 +48,9 @@ p {
     position: relative;
 }
 
+
 .character {
+    overflow: hidden;
     article {
         position: absolute;
         top: 0%;
@@ -56,10 +58,10 @@ p {
         left: 54%;
     }
 
-    img {
+    .character-img {
         position: absolute;
         top: 0%;
-        right: 40%;
+        right: 50%;
     }
 
 }
